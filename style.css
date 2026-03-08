@@ -515,26 +515,37 @@ body {
     font-size: 1.8rem;
 }
 
-.thm-badge {
-    padding: 30px;
+.thm-badge-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    height: 100%;
+}
+
+.thm-single-badge {
+    padding: 20px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100%;
 }
 
-.thm-master-badge {
-    max-width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
-    transition: var(--transition);
+.thm-single-badge i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.2));
 }
 
-.thm-badge:hover .thm-master-badge {
-    transform: scale(1.03);
-    box-shadow: 0 15px 30px rgba(0,255,204,0.2);
+.thm-single-badge h4 {
+    font-size: 1.1rem;
+    color: var(--text-main);
+    margin-bottom: 5px;
+}
+
+.thm-single-badge p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
 }
 
 .rooms-list {
